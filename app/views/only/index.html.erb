@@ -5,9 +5,18 @@
 <br>
 
 <div data-controller = "toggle">
-  <button data-action = "toggle#hideorreveal">Click Me</button>
+  <button data-action = "toggle#hideorreveal">Click Me To Toggle Div Below</button>
   <div data-toggle-target="div">
     We cannot see this hidden div.
   </div>
+  <br>
+  <br>
+  <button data-action = "toggle#reveal">Click Me To Show Menu</button>
+    <select data-toggle-target = "menu">
+      <option>First option here</option>
+      <option>Second option here</option>
+      <option>Third option here</option>
+      <option>Fourth option here</option>
+    </select>
 </div>
 
