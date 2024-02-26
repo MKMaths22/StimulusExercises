@@ -1,3 +1,18 @@
-.hidden {
-  display: none;
+.withcheckbox {
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+}
+
+.highlighted {
+  border: 2px solid green;
 }
