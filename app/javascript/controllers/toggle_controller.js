@@ -2,12 +2,11 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
 
-  static targets = [ "div", "menu" ]
+  static targets = [ "div", "menu", "hideme", "revealme"]
 
   connect() {
-    this.menuTargets.forEach((menu) => {
-      menu.hidden = true
-    })
+    this.menuTarget.hidden = true
+    this.revealmeTarget.hidden = true
   }
 
   hideorreveal() {
@@ -20,5 +19,10 @@ export default class extends Controller {
     this.menuTargets.forEach((element) => {
       element.hidden = false
     })
+  }
+
+  hideandrevealanother() {
+    this.hidemeTarget.hidden = true
+    this.revealmeTarget.hidden = false
   }
 }
