@@ -23,12 +23,19 @@
     <button data-action = "toggle#hideandrevealanother" data-toggle-target="hideme">Click Me So I Disappear And Show another input box
     </button>
   <br>
-  <textarea data-toggle-target = "revealme"></textarea>
+  <textarea id="revealedtextarea" data-toggle-target = "revealme"></textarea>
   <br>
   <br>
     <div class="withcheckbox" data-toggle-target="checkbox">
       <input type="checkbox" data-action = "toggle#highlight">
       </input>
     </div>
+  </div>
+  <div data-controller = "text">
+    <div data-text-target="errordiv">
+      <p id="warning" data-text-target="warning">You are getting close to the 280-character limit.</p>
+      <p id="error" data-text-target="error">You have exceeded the 280-character limit.</p>
+    </div>
+    <input id="limitedtext" type="text" data-text-target="limitedtext" data-action="keyup->text#checklength">
   </div>
 

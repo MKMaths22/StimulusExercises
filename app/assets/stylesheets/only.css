@@ -16,3 +16,19 @@ input[type="checkbox"] {
 .highlighted {
   border: 2px solid green;
 }
+
+.error {
+  border: 2px solid red;
+}
+
+.warning {
+  border: 2px solid orange;
+}
+
+#error {
+  color: red;
+}
+
+#warning {
+  color: orange;
+}
